@@ -1,0 +1,385 @@
+/* ─────────────────────────────────────────────
+   BullGround Landing — Design System
+   Brand: Nett Brandbook · cream-first variant
+───────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Core palette */
+  --cream:        #EFECE7;
+  --cream-light:  #F5F2ED;
+  --black:        #090A07;
+  --forest:       #282B21;
+  --sage:         #A2AE8B;
+  --sage-mid:     #656C56;
+  --mint:         #A6EEDA;   /* SPARINGLY — max 2 instances/viewport */
+  --grey-text:    #8D908C;
+  --grey-border:  #D4CFC6;
+  --white:        #FFFFFF;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--cream);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── PAGE SHELL ─────────────────────────────── */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cream);
+}
+
+/* ── MAIN GRID ───────────────────────────────── */
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 80px;
+}
+
+/* ── LEFT PANEL ─────────────────────────────── */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.card-wrapper {
+  /* Slight perspective tilt like in screenshot */
+  transform: rotate(-1deg);
+  filter: drop-shadow(0 12px 40px rgba(9, 10, 7, 0.14))
+          drop-shadow(0 2px 8px rgba(9, 10, 7, 0.08));
+}
+
+.king-card {
+  display: block;
+  width: 300px;
+  border-radius: 16px;
+  background: var(--white);
+}
+
+.tagline {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 52px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.tagline strong {
+  font-weight: 700;
+  display: block;
+}
+
+/* ── RIGHT PANEL ─────────────────────────────── */
+.right-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper,
+.success-wrapper {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Brand name */
+.brand-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--black);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--grey-text);
+  margin-bottom: 12px;
+}
+
+/* Description */
+.description {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.55;
+  opacity: 0.75;
+  margin-bottom: 32px;
+}
+
+/* ── FORM ────────────────────────────────────── */
+.form {
+  text-align: left;
+}
+
+.field-group {
+  margin-bottom: 18px;
+}
+
+.field-label {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--grey-text);
+  margin-bottom: 7px;
+}
+
+.required {
+  color: var(--black);
+  opacity: 0.45;
+}
+
+.field-input {
+  width: 100%;
+  padding: 13px 15px;
+  background: var(--white);
+  border: 1px solid var(--grey-border);
+  border-radius: 6px;
+  font-size: 14.5px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: var(--black);
+  transition: border-color 0.15s ease;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.field-input::placeholder {
+  color: #C8C4BC;
+}
+
+.field-input:focus {
+  border-color: var(--black);
+}
+
+/* Separator between fields and checkbox */
+.form-rule {
+  height: 1px;
+  background: var(--grey-border);
+  margin: 20px 0;
+}
+
+/* ── CHECKBOX ────────────────────────────────── */
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-bottom: 22px;
+}
+
+.checkbox-box {
+  flex-shrink: 0;
+  width: 17px;
+  height: 17px;
+  margin-top: 1px;
+  border: 1.5px solid var(--grey-border);
+  border-radius: 3px;
+  background: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s, border-color 0.15s;
+  /* reset button styles */
+  padding: 0;
+  font: inherit;
+}
+
+.checkbox-box.is-checked {
+  background: var(--black);
+  border-color: var(--black);
+}
+
+.checkbox-text {
+  font-size: 12.5px;
+  color: var(--grey-text);
+  line-height: 1.55;
+}
+
+.checkbox-text a {
+  color: var(--black);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.checkbox-text a:hover {
+  opacity: 0.7;
+}
+
+/* ── SUBMIT BUTTON ───────────────────────────── */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: var(--black);
+  color: var(--cream);
+  border: none;
+  border-radius: 6px;
+  font-size: 14.5px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+  margin-bottom: 20px;
+}
+
+.submit-btn:disabled {
+  background: #C8C4BC;
+  color: #9A968F;
+  cursor: not-allowed;
+}
+
+.submit-btn:not(:disabled):hover {
+  opacity: 0.85;
+}
+
+.submit-btn:not(:disabled):active {
+  opacity: 0.95;
+}
+
+/* ── ALT LINK ────────────────────────────────── */
+.alt-link {
+  font-size: 13.5px;
+  color: var(--grey-text);
+  text-align: center;
+}
+
+.alt-link-btn {
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 600;
+  color: var(--black);
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.alt-link-btn:hover {
+  opacity: 0.7;
+}
+
+/* ── SUCCESS STATE ───────────────────────────── */
+.success-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+/* ── FOOTER ──────────────────────────────────── */
+.footer {
+  padding: 0 80px 40px;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-rule {
+  flex: 1;
+  height: 1px;
+  background: var(--grey-border);
+}
+
+.footer-bull {
+  width: 38px;
+  height: auto;
+  opacity: 0.65;
+  flex-shrink: 0;
+}
+
+/* ── RESPONSIVE ──────────────────────────────── */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 48px 32px;
+  }
+
+  .left-panel {
+    align-items: center;
+    text-align: center;
+  }
+
+  .card-wrapper {
+    transform: none;
+  }
+
+  .king-card {
+    width: 240px;
+  }
+
+  .tagline {
+    font-size: 42px;
+    text-align: left;
+  }
+
+  .right-panel {
+    justify-content: stretch;
+  }
+
+  .form-wrapper,
+  .success-wrapper {
+    max-width: 100%;
+  }
+
+  .footer {
+    padding: 0 32px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 36px 20px;
+  }
+
+  .brand-name {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 36px;
+  }
+
+  .king-card {
+    width: 200px;
+  }
+
+  .footer {
+    padding: 0 20px 28px;
+  }
+}

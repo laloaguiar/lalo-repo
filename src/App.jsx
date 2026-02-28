@@ -36,14 +36,13 @@ export default function App() {
         <section className="left-panel" aria-label="Brand">
           <div className="card-wrapper">
             <img
-              src="/assets/asset-33.jpg"
-              alt="BullGround — King of Diamonds"
+              src="/assets/asset-statue.png"
+              alt="BullGround — Grounded Thinking"
               className="king-card"
             />
           </div>
           <p className="tagline">
             <strong>clarity</strong>
-            <br />
             before wealth.
           </p>
         </section>

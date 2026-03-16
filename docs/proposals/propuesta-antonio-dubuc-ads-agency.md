@@ -1,27 +1,28 @@
-# BULLGROUND — Propuesta de Asesoria
+# BULLGROUND — Propuesta de Asesoria en Automatizacion & IA
 
 ---
 
-**Cliente:** Antonio Dubuc & Socio
+**Para:** Antonio Dubuc & Socio
+**De:** Bullground — Consultoria en Automatizacion & IA
 **Servicio:** Asesoria 1:1 en Claude Code, GitHub & Automatizaciones para Agencia de Ads
 **Duracion:** 60 minutos
 **Inversion:** $199 USD
-**Formato:** Videollamada en vivo + implementacion en tiempo real
+**Formato:** Videollamada 1:1 + implementacion en vivo
 
 ---
 
 ## Contexto
 
-Antonio opera una agencia de ads y esta explorando Claude Code por su cuenta. Necesita a alguien con experiencia real implementando estas herramientas para acelerar su curva de aprendizaje y salir de la sesion con sistemas funcionales, no solo teoria.
+Antonio y su socio operan una agencia de ads y estan explorando Claude Code por su cuenta. Buscan a alguien con experiencia real implementando estas herramientas para acelerar su curva de aprendizaje y salir de la sesion con sistemas funcionales para su agencia — no solo teoria. Desde Bullground hemos construido y probado estos mismos flujos de automatizacion en proyectos reales, y esta sesion esta diseñada para transferir ese conocimiento directamente a su operacion.
 
 ---
 
 ## Que Vamos a Hacer en la Sesion
 
 ### 1. Setup & Fundamentos (10 min)
-- Configuracion correcta de Claude Code + GitHub para su agencia
-- Estructura de repositorios para manejar multiples clientes
-- Como usar skills y hooks para estandarizar procesos repetitivos
+- Configuracion correcta de Claude Code + GitHub para la agencia de Antonio
+- Estructura de repositorios para manejar multiples clientes de la agencia
+- Como usar skills y hooks para estandarizar procesos repetitivos en su operacion
 
 ### 2. Apify para Research de Ads (10 min)
 - Configurar actors de Apify para scraping de Meta Ad Library y Google Ads Transparency
@@ -39,14 +40,14 @@ Antonio opera una agencia de ads y esta explorando Claude Code por su cuenta. Ne
   - Genere un PDF con formato profesional personalizado por cliente
   - Lo deposite en la carpeta correcta (Google Drive / carpeta local)
   - Opcionalmente envie notificacion por email o Slack
-- Template de reporte reutilizable para todos sus clientes
+- Template de reporte reutilizable para todos los clientes de la agencia
 
 ### 5. Casos de Uso Avanzados & Roadmap (10 min)
 - Skill de Claude Code para generar briefs creativos desde datos de performance
-- Agente que detecte campanas con bajo rendimiento y sugiera optimizaciones
+- Agente que detecte campañas con bajo rendimiento y sugiera optimizaciones
 - Automatizacion de onboarding de nuevos clientes (formulario → carpetas → accesos → primer reporte)
 - Scraping de landing pages de competencia con Apify para analisis
-- Bot de Slack/WhatsApp que responda preguntas sobre performance de campanas en tiempo real
+- Bot de Slack/WhatsApp que responda preguntas sobre performance de campañas en tiempo real
 
 ---
 
@@ -58,9 +59,9 @@ Antonio opera una agencia de ads y esta explorando Claude Code por su cuenta. Ne
 | Apify funcional | Actor configurado para scraping de ad libraries |
 | Pipeline de ads | Workflow n8n: brief → copy → publicacion |
 | Reporte PDF automatico | Workflow n8n con schedule cada lunes 8am |
-| Skills de Claude Code | Skills personalizadas para su flujo de trabajo |
+| Skills de Claude Code | Skills personalizadas para el flujo de trabajo de su agencia |
 | Grabacion de la sesion | Para referencia futura de el y su socio |
-| Roadmap de automatizaciones | Lista priorizada de siguientes pasos |
+| Roadmap de automatizaciones | Lista priorizada de siguientes pasos para la agencia |
 
 ---
 
@@ -74,9 +75,9 @@ Antonio opera una agencia de ads y esta explorando Claude Code por su cuenta. Ne
 
 ---
 
-## Por Que Bullground
+## Por Que Trabajar con Bullground
 
-No es una clase teorica. Es una sesion donde implementamos juntos, en tu pantalla, con tus cuentas, y sales con sistemas funcionando. Lo que normalmente toma semanas de prueba y error, lo resolvemos en 60 minutos porque ya lo hemos construido y probado.
+En Bullground ya construimos y probamos estos mismos sistemas de automatizacion en proyectos reales — funnels, landing pages, reportes, pipelines de contenido y ads. Esta no es una clase teorica. Es una sesion donde implementamos juntos, en tu pantalla, con tus cuentas, y sales con sistemas funcionando para tu agencia. Lo que normalmente toma semanas de prueba y error, lo resolvemos en 60 minutos porque ya recorrimos ese camino.
 
 ---
 
